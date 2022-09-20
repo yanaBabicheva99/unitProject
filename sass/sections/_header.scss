@@ -1,0 +1,49 @@
+.header {
+  position: relative;
+  height: 870px;
+  padding-top: 60px;
+  @include  bgImg("../img/bg/header.jpg");
+  font-weight: 700;
+  color: #fff;
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__title {
+    margin-bottom: 40px;
+    font-size: 96px;
+    line-height: 1;
+  }
+  &__description {
+    max-width: 730px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 1.2;
+
+    p {
+      margin-bottom: 15px;
+    }
+  }
+  &__form {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+  }
+  &__scroll {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: rotateX(-50%);
+  }
+}
+

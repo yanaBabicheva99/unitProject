@@ -1,0 +1,39 @@
+.tasks {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #E1E1E1;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 70px;
+  }
+
+  &__content {
+    width: 530px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  &__text {
+    width: 400px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.1;
+    color: $paragraphColor;
+  }
+
+  p + p {
+    margin-top: 15px;
+  }
+
+}

@@ -1,0 +1,23 @@
+.button {
+  background-color: #00C470;
+  height: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 30px;
+
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 60px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #fff;
+
+  &:hover {
+    background-color: #059659;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: #065431;
+  }
+}

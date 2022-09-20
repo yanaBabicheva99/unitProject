@@ -1,0 +1,21 @@
+.functional {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  &__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+  &__row {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  &__row > * {
+    margin-left: 15px;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+}

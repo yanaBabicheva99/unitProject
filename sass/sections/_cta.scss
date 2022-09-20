@@ -1,0 +1,19 @@
+.cta {
+    padding-top: 83px;
+    padding-bottom: 84px;
+    text-align: center;
+    @include bgImg("../img/bg/cta-bg.jpg");
+
+    &__title {
+        margin-bottom: 40px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 1;
+        color: #fff;
+
+        span {
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+}

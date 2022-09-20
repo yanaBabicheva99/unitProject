@@ -1,0 +1,35 @@
+.focus {
+  padding-top: 80px;
+  padding-bottom: 40px;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 470px;
+    padding-top: 28px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  &__text {
+    width: 400px;
+    max-width: 400px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.1;
+    color: $paragraphColor;
+
+    p + p {
+      margin-top: 15px;
+    }
+  }
+}
