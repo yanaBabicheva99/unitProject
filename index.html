@@ -30,11 +30,11 @@
         <form class="header__form">
             <input class="input" type="text" placeholder="Ваше имя">
             <input class="input" type="email" placeholder="Email">
-            <button class="button" type="submit">начать триал</button>
+            <a class="button" href="#">начать триал</a>
         </form>
     </div>
     <div class="header__scroll">
-        <a class="#functional" href="">
+        <a href="#functional">
             <img src="./img/header/mouse.svg" alt="Scroll Down">
         </a>
     </div>
@@ -43,7 +43,7 @@
     <div class="container">
       <header class="functional__header">
           <h2 class="title">функционал</h2>
-          <h3 class="subtitle">получайте больше</h3>
+          <h3 class="subtitle">Получайте больше</h3>
       </header>
         <div class="functional__row">
             <div class="card">
@@ -80,7 +80,7 @@
 <section class="cta">
         <div class="container">
             <h2 class="cta__title">Начните использовать <span>ЮНИТ</span> уже сегодня.</h2>
-            <button class="button">Подключить</button>
+            <a class="button" href="#price">Подключить</a>
         </div>
 </section>
 <section class="tasks">
@@ -100,14 +100,16 @@
                     </p>
                 </div>
             </div>
-            <img class="tasks__img" src="./img/devices/iphone.jpg" alt="iPhone X">
+            <div class="tasks__img">
+               <img src="./img/devices/iphone.jpg" alt="iPhone X">
+            </div>
         </div>
     </div>
 </section>
 <section class="focus">
     <div class="container">
         <div class="focus__row">
-            <img class="focus__img" src="./img/devices/ipad.jpg" alt="iPad">
+            <div class="focus__img"><img src="./img/devices/ipad.jpg" alt="iPad"></div>
             <div class="focus__content">
                 <header class="focus__header">
                     <h2 class="title">всегда в фокусе</h2>
@@ -124,7 +126,7 @@
         </div>
     </div>
 </section>
-<section class="price">
+<section class="price" id="price">
     <div class="price__content">
         <div class="container">
             <header class="price__header">
@@ -231,7 +233,7 @@
             </div>
         </div>
         <div class="footer__copyright">
-            <p>Копирайт © 2019 ЮНИТ. Все права защищены.</p>
+            <p>Копирайт &#169; 2019 ЮНИТ. Все права защищены.</p>
         </div>
     </div>
 </footer>

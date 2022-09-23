@@ -1,4 +1,5 @@
 .button {
+  display: inline-block;
   background-color: #00C470;
   height: 60px;
   padding-left: 40px;
@@ -9,8 +10,11 @@
   font-size: 14px;
   line-height: 60px;
   letter-spacing: 4px;
+  text-decoration: none;
   text-transform: uppercase;
   color: #fff;
+  cursor: pointer;
+  transition: background-color  .3s ease-in;
 
   &:hover {
     background-color: #059659;

@@ -6,8 +6,9 @@
   &__row {
     display: flex;
     align-items: center;
-    justify-content: center;
-    column-gap: 70px;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 115px;
   }
 
   &__content {
@@ -16,6 +17,10 @@
     flex-direction: column;
     row-gap: 30px;
 
+  }
+
+  &__img {
+    width: 365px;
   }
 
   &__header {
