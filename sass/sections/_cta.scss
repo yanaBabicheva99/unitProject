@@ -4,6 +4,21 @@
     text-align: center;
     @include bgImg("../img/bg/cta-bg.jpg");
 
+    @media (max-width: 1199px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        @include bgImg("../img/bg/cta_tablet.jpg");
+    }
+
+    @media (max-width: 899px) {
+        @include bgImg("../img/bg/cta_mobil.jpg");
+    }
+
+    @media (max-width: 599px) {
+        @include bgImg("../img/bg/cta_xsMobil.jpg");
+    }
+
+
     &__title {
         margin-bottom: 40px;
         font-weight: 500;
@@ -14,6 +29,16 @@
         span {
             font-weight: 700;
             text-transform: uppercase;
+        }
+
+        @media (max-width: 899px) {
+            margin-bottom: 30px;
+            font-size: 20px;
+        }
+
+        @media (max-width: 599px) {
+            margin-bottom: 20px;
+            font-size: 18px;
         }
     }
 }

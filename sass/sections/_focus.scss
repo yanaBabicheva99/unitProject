@@ -1,10 +1,36 @@
 .focus {
   padding-top: 80px;
   padding-bottom: 40px;
+  overflow-x: hidden;
+
+  @media (max-width: 1199px) {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: 899px) {
+    padding-top: 28px;
+    padding-bottom: 0;
+  }
+  @media (max-width: 599px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
 
   &__row {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 899px) {
+      flex-direction: row-reverse;
+    }
+
+    @media (max-width: 599px) {
+      width: 290px;
+      flex-direction: column;
+    }
+
   }
 
   &__content {
@@ -13,24 +39,83 @@
     row-gap: 30px;
     width: 470px;
     padding-top: 28px;
+
+    @media (max-width: 1199px) {
+      width: 420px;
+      row-gap: 20px;
+      padding-top: 21px;
+    }
+
+    @media (max-width: 899px) {
+      width: 370px;
+    }
+
+    @media (max-width: 599px) {
+      width: 100%;
+      padding-top: 10px;
+      text-align: center;
+    }
   }
 
   &__header {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
+
+    @media (max-width: 1199px) {
+      row-gap: 20px;
+    }
+
+    @media (max-width: 599px) {
+      row-gap: 10px;
+    }
   }
 
   &__img {
     width: 570px;
+
+    @media (max-width: 1199px) {
+      width: 420px;
+
+      & img {
+       max-width: 100%;
+      }
+    }
+
+    @media (max-width: 899px) {
+      width: 170px;
+      padding-top: 21px;
+
+      & img {
+        max-width: unset;
+        max-height: 330px;
+      }
+    }
+    
+    @media (max-width: 599px) {
+       width: 100%;
+      padding-top: 0;
+
+      & img {
+        max-width: 100%;
+      }
+    }
   }
+
   &__text {
-    width: 400px;
     max-width: 400px;
     font-weight: 500;
     font-size: 14px;
     line-height: 2.1;
     color: $paragraphColor;
+
+    @media (max-width: 1199px) {
+      max-width: 100%;
+    }
+
+    @media (max-width: 899px) {
+      line-height: 1.71;
+    }
 
     p + p {
       margin-top: 15px;

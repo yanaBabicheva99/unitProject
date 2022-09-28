@@ -7,6 +7,15 @@
   background: rgba(0, 0, 0, 0.75);
   border-radius: 8px;
 
+  @media (max-width: 1199px) {
+    width: 270px;
+  }
+
+  @media (max-width: 899px) {
+    width: 300px;
+  }
+
+
   &__header {
     display: flex;
     flex-direction: column;

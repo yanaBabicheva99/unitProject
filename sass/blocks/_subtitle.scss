@@ -3,6 +3,18 @@
   font-size: 48px;
   line-height: 1;
   color: $textColor;
+  
+  @media (max-width: 1199px) {
+    font-size: 38px;
+  }
+
+  @media (max-width: 899px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 599px) {
+    font-size: 26px;
+  }
 }
 .subtitle--white {
   color: #FFFFFF;

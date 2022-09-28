@@ -1,5 +1,14 @@
 .slider {
   position: relative;
+  padding-bottom: 40px;
+
+  @media (max-width: 1199px) {
+    padding-bottom: 55px;
+  }
+
+  @media (max-width: 899px) {
+    padding-bottom: 42px;
+  }
 
   &__arrow {
     position: absolute;
@@ -16,14 +25,70 @@
       top: 53px;
       left: -46px;
       transform: translate(-100%);
+
+      @media (max-width: 1199px) {
+        left: -22px;
+      }
+      
+      @media (max-width: 949px) {
+        left: -30px;
+      }
+      
+      @media (max-width: 899px) {
+        top: 64px;
+        left: -46px;
+      }
     }
 
     &--right {
       top: 53px;
       right: -46px;
       transform: translate(100%);
+
+      @media (max-width: 1199px) {
+        right: -22px;
+      }
+
+
+      @media (max-width: 949px) {
+        right: -30px;
+      }
+
+      @media (max-width: 899px) {
+        top: 64px;
+        right: -46px;
+      }
+    }
+
+    @media (max-width: 599px) {
+      display: none;
     }
   }
+
+  &__pagination {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+  }
+
+  &__pagination-item {
+    margin-right: 10px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #E1E1E1;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__pagination-item--active {
+      background: #00C470;
+  }
+
 }
 
 .slider-item {
@@ -39,6 +104,20 @@
     font-size: 18px;
     line-height: 2;
     color: #000000;
+
+    @media (max-width: 1199px) {
+      line-height: 1.5;
+    }
+
+    @media(max-width: 899px) {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    @media(max-width: 599px) {
+      font-size: 14px;
+    }
+
   }
 
   &__author {
@@ -52,11 +131,21 @@
     height: 80px;
     border-radius: 50%;
     overflow: hidden;
+
+    @media (max-width: 599px) {
+      margin-right: 10px;
+      width: 60px;
+      height: 60px;
+    }
   }
 
   &__author-desc {
     font-weight: 500;
     font-size: 16px;
+
+    @media (max-width: 599px) {
+      font-size: 14px;
+    }
   }
 
   &__author-title {
