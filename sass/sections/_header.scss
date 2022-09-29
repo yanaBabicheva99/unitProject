@@ -25,7 +25,7 @@
   }
 
   &__buttons {
-    width: 100%;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     display: flex;
@@ -34,6 +34,7 @@
 
     @media (max-width: 1199px) {
       margin-bottom: 100px;
+      width: 100%;
     }
 
     @media (max-width: 899px) {
